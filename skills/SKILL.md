@@ -21,14 +21,19 @@ npm install -g better-icons
 bun add -g better-icons
 ```
 
-**Option 2 — Run without installing (prefix every command with `npx`):**
+**Option 2 — Run without installing (prefix every command with `npx` or `bunx`):**
 
 ```bash
+# Using npx (npm)
 npx better-icons search arrow --limit 10
 npx better-icons get lucide:home > icon.svg
+
+# Using bunx (Bun — faster)
+bunx better-icons search arrow --limit 10
+bunx better-icons get lucide:home > icon.svg
 ```
 
-> **For AI agents:** Prefer the global install so that `better-icons` is on `$PATH` and the commands below work as-is. Run the install step once during environment setup, then use the commands without `npx`.
+> **For AI agents:** Prefer the global install so that `better-icons` is on `$PATH` and the commands below work as-is. Run the install step once during environment setup, then use the commands without `npx`/`bunx`.
 
 ## CLI
 
